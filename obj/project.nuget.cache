@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YTXDumNLslt56WQ8+29W6yX637nef5nqFGHPALv5ePphDHNMufof++HER703ho5Q1oAr/+Yxg/C4obSBp6f8tw==",
+  "dgSpecHash": "+YyR1wgXRYxApxzFKwp/0alwIPrt+DLuW4SgBhy3VR4stmv9rkCASZ3/0RzpZI3lhjW2jLKd2GpC/z/WCfW44w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dawid\\Desktop\\c#\\MoviesPWA\\MoviesPWA.csproj",
+  "projectFilePath": "C:\\Users\\Dawid\\Desktop\\pamiw8\\MoviesPWA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dawid\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\Dawid\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
