@@ -12,6 +12,7 @@ import static org.apache.el.lang.ELArithmetic.isNumber;
 
 @RestController
 @RequestMapping("/api/v1/movies")
+@CrossOrigin(origins = "http://localhost:4200")
 public class MovieResource {
     private final MovieService movieService;
 

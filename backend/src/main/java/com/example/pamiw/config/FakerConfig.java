@@ -1,10 +1,12 @@
 package com.example.pamiw.config;
 
+import com.example.pamiw.model.AuthenticationRequest;
 import com.example.pamiw.model.Director;
 import com.example.pamiw.model.Movie;
 import com.example.pamiw.repo.DirectorRepo;
 import com.example.pamiw.repo.MovieRepo;
 import com.example.pamiw.repo.UserRepository;
+import com.example.pamiw.service.AuthenticationService;
 import com.github.javafaker.Faker;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -54,8 +56,9 @@ public class FakerConfig {
     }
 
     @Bean
-    CommandLineRunner commandLineRunner(MovieRepo movieRepo, DirectorRepo directorRepo) {
+    CommandLineRunner commandLineRunner(MovieRepo movieRepo, DirectorRepo directorRepo, AuthenticationService authenticationService) {
         return args -> {
+            authenticationService.register(new AuthenticationRequest("admin","1234"));
             Random random = new Random(987654321);
             Faker faker = new Faker(Locale.ENGLISH, random);
             for(int i=0; i<20; i++) {

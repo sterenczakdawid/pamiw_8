@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/directors")
+@CrossOrigin(origins = "http://localhost:4200")
 public class DirectorResource {
 
     private final DirectorService directorService;
